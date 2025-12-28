@@ -1,180 +1,194 @@
 # Theta-domain-engine-kernel
 > 🔍 **Purpose:** Early engine direction validation   > ⚡ **Speed:** Real-time friendly   > ❌ **Not:** CFD / GT-Power replacement   > ✅ **Yes:** Trend, risk &amp; warning analysis
 
-# ⚙️ Theta-Domain Engine Kernel  
-### 🧠 Sochne ke liye engine model — simulate karne se pehle
+# ⚙️ Theta Engine Reasoning Kernel
+### 🧠 Think first. Simulate later.
+
+> 🔍 Purpose: Early engine direction validation  
+> ⚡ Speed: Real-time friendly  
+> ❌ Not: CFD / GT-Power replacement  
+> ✅ Yes: Trend, risk & decision support
 
 ---
 
-🚗 **Yeh engine simulator nahi hai.**  
-Yeh ek **decision-making / reasoning layer** hai jo engine development ke **bahut early stage** par kaam aata hai.
+## 🚗 Simple words mein (for everyone)
 
-Aksar hota kya hai:
-- Naya engine idea aaya  
-- Seedha **GT-Power / ANSYS** chala diya  
-- Kaafi time aur effort lag gaya  
-- Phir pata chala: *direction hi galat thi*
+Yeh project **engine simulator nahi** hai.
 
-❌ Time waste  
-❌ Paisa waste  
-❌ Energy waste  
+Iska kaam hai ek simple sawaal ka jawab dena:
 
-👉 **Yeh kernel pehle hi yeh sawal poochta hai:**
+> **“Is engine idea par aage time aur paisa lagana chahiye ya nahi?”**
 
-> *“Is direction mein aage badhna worth it hai ya nahi?”*
+Industry mein aksar:
+- Idea aata hai  
+- Heavy tools (GT-Power / ANSYS) chala diye jaate hain  
+- Baad mein pata chalta hai direction hi galat thi  
 
-Isi liye iska kaam **final number dena nahi**,  
-balki **galat direction ko jaldi pakad lena** hai.
+👉 Yeh kernel **us se pehle rokta hai**.
 
 ---
 
-## 🧠 What this actually is
+## 🧠 Technical overview (for engineers)
 
-Theta-Domain Engine Kernel ek **θ-domain (crank-angle domain), reduced-order engine reasoning system** hai  
-jo position leta hai:
+This is a **θ-domain (crank-angle domain), reduced-order engine reasoning kernel**  
+designed to sit:
 
-⬇️ **GT-Power / ANSYS se neeche**  
-⬆️ **Textbook thermodynamics se upar**
+⬇️ Below GT-Power / ANSYS  
+⬆️ Above textbook thermodynamics  
 
-Iska focus hai:
-- trend correctness  
-- early decision support  
-- real-time dashboard compatibility  
+It focuses on:
+- Trend correctness  
+- Relative change detection  
+- Early-stage decision support  
 
-👉 Yeh **high-fidelity simulation ka replacement nahi** hai.
-
----
-
-## ❓ Real industry problem
-
-Industry mein problem physics ki kami nahi hai.  
-Problem hai **timing**.
-
-🔴 Mehenga simulation **bahut jaldi** chala diya jaata hai  
-🔴 Galat engine concepts par **heavy tools** lag jaate hain  
-🔴 Early stage par koi clear tool nahi hota jo bole:  
-   *“yahan mat jao”*
-
-👉 **Theta-Domain Kernel isi gap ko fill karta hai.**
+Not high-fidelity simulation.
 
 ---
 
-## 🎯 Yeh system karta kya hai
+## 🏗️ System flow (clear & visual)
 
-Engine ko **time ya RPM ke through nahi**,  
-balki **pure crank-angle (θ) ke through** dekhta hai.
+# ⚙️ Theta Engine Reasoning Kernel
+### 🧠 Think first. Simulate later.
 
-Is process mein:
-- Har crank-angle par engine ka behaviour dekha jaata hai
-- Pressure, temperature, volume jaise signals track hote hain  
-- Combustion phasing ka trend samjha jaata hai  
-- Intake / exhaust / turbo jaise effects **trend-level par** add kiye jaate hain  
-
-Result:
-- Exact power number nahi  
-- Lekin **clear direction**: better ya worse
+> 🔍 Purpose: Early engine direction validation  
+> ⚡ Speed: Real-time friendly  
+> ❌ Not: CFD / GT-Power replacement  
+> ✅ Yes: Trend, risk & decision support
 
 ---
 
+## 🚗 Simple words mein (for everyone)
 
-## 🏗️ System ka flow (samajhne ke liye)
+Yeh project **engine simulator nahi** hai.
 
+Iska kaam hai ek simple sawaal ka jawab dena:
 
-Real Telemetry (RPM, Throttle) ↓ Dashboard (Graphs, Buttons, Alerts) ↓ Theta-Domain Physics Kernel ↓ Trend / Risk / Warning Signals
+> **“Is engine idea par aage time aur paisa lagana chahiye ya nahi?”**
 
-- RPM yahan **context** hai, solver ka boss nahi  
-- Physics disciplined hai, speculative nahi  
-- Dashboard decision lene mein madad karta hai  
+Industry mein aksar:
+- Idea aata hai  
+- Heavy tools (GT-Power / ANSYS) chala diye jaate hain  
+- Baad mein pata chalta hai direction hi galat thi  
+
+👉 Yeh kernel **us se pehle rokta hai**.
 
 ---
 
-## 📐 Accuracy ka approach
+## 🧠 Technical overview (for engineers)
 
-Yeh system yeh claim nahi karta:
-> “Main exact number dunga”
+This is a **θ-domain (crank-angle domain), reduced-order engine reasoning kernel**  
+designed to sit:
 
-Yeh claim karta hai:
-> “Main sahi direction dikhaunga”
+⬇️ Below GT-Power / ANSYS  
+⬆️ Above textbook thermodynamics  
 
-Isliye accuracy ko is tarah dekha jaata hai:
+It focuses on:
+- Trend correctness  
+- Relative change detection  
+- Early-stage decision support  
+
+Not high-fidelity simulation.
+
+---
+
+## 🏗️ System flow (clear & visual)
+
+- RPM = operating context  
+- Physics = disciplined reasoning  
+- Dashboard = decision layer  
+
+---
+
+## 🎯 What this system does
+
+- Works purely in **crank-angle (θ) domain**
+- Computes per-θ signals:
+  - Pressure
+  - Temperature
+  - Volume
+  - Burn fraction
+- Adds intake / exhaust / turbo effects at **trend level**
+- Feeds **real-time dashboards** for monitoring & warnings
+
+---
+
+## 🚫 What this system does NOT do
+
+This project does **not**:
+- Run CFD
+- Solve gas dynamics
+- Model knock chemistry
+- Predict emissions accurately
+- Replace ECU logic
+
+👉 For these, GT-Power / ANSYS remain the right tools.
+
+---
+
+## 📐 Accuracy philosophy (honest)
+
+Goal is **directional correctness**, not exact numbers.
 
 | Aspect | Typical Trend Fidelity |
 |------|------------------------|
-| Geometry (V-θ) | ⭐⭐⭐⭐⭐ (~95%) |
-| Combustion phasing trend | ⭐⭐⭐⭐ (80–85%) |
-| Pressure trend | ⭐⭐⭐⭐ (75–85%) |
-| IMEP / work trend | ⭐⭐⭐ (75–80%) |
-| Relative change detection | ⭐⭐⭐⭐⭐ Strong |
+| Geometry (V-θ) | High (~95%) |
+| Combustion phasing | Medium–High (80–85%) |
+| Pressure trend | Medium (75–85%) |
+| IMEP trend | Medium (75–80%) |
+| Relative change | Strong |
 
-⚠️ Yeh values **order-of-magnitude** hain, guarantee nahi.
-
----
-
-## ⚖️ Comparison — yeh kahan fit hota hai
-
-| Tool | Kis liye | Speed | Cost |
-|----|---------|------|------|
-| 📘 Textbook calc | Basic understanding | ⚡ Fast | 💲 Low |
-| ⚙️ **Theta Kernel** | Direction & trends | ⚡⚡ Very Fast | 💲 Low |
-| 🧰 GT-Power | 1D engine simulation | 🐢 Slow | 💲💲 High |
-| 🌊 ANSYS CFD | Detailed flow physics | 🐌 Very Slow | 💲💲💲 Very High |
-
-👉 **Yeh GT-Power / ANSYS ka replacement nahi hai**  
-👉 Yeh unhe **zyada sahi jagah par use karne mein madad karta hai**
+> Values are indicative, not guarantees.
 
 ---
 
-## 📈 Output ka nature
+## ⚖️ Where this fits (comparison)
 
-System per-θ basis par kaam karta hai, isliye outputs naturally smooth hote hain:
-- P-θ  
-- V-θ  
-- T-θ  
-- P-V loop  
+| Tool | Primary Use | Speed | Cost |
+|----|-------------|------|------|
+| Textbook calc | Basic understanding | Fast | Low |
+| **This kernel** | Direction & trends | Very Fast | Low |
+| GT-Power | 1D engine simulation | Slow | High |
+| ANSYS CFD | Detailed flow physics | Very Slow | Very High |
 
-Yeh sab **dashboard mein real-time** generate hote hain.
+👉 This kernel **does not replace** heavy tools  
+👉 It makes their usage **smarter and cheaper**
 
 ---
 
-## 🧪 Practical use-cases
+## 🧪 Typical use-cases
 
-✔️ Engine concept filtering  
-✔️ Throttle / phasing comparison  
-✔️ Real-time monitoring dashboards  
-✔️ Early digital-twin backends  
-✔️ Warning-before-failure systems  
+- Engine concept filtering  
+- Throttle / phasing comparisons  
+- Early digital twin backends  
+- Real-time monitoring dashboards  
+- Warning-before-failure systems  
 
 ---
 
 ## 📌 Current status
 
 - θ-domain kernel implemented  
-- Influence layers added (trend-level)  
-- Real-time telemetry integration tested  
-- Public code release **intentionally staged**
-
-> README pehle — code baad mein
+- Trend-level influence layers added  
+- Real-time telemetry integration verified  
+- Public code release staged
 
 ---
 
-## 👥 Yeh project kis ke liye hai
+## 👥 Who this is for
 
 - Engine R&D engineers  
 - Simulation engineers  
 - Motorsport / diagnostics teams  
-- Log jo **simulate karne se pehle sochna chahte hain**
+- Anyone who wants to **think before simulating**
 
 ---
 
-## 🧠 Final baat
+## 🧠 Final note
 
-Yeh shortcut nahi hai.  
-Yeh **discipline** hai.
+This is not a shortcut.
 
-Engine banana mehenga hota hai.  
-Galat engine banana aur mehenga hota hai.
+It is a **discipline layer**  
+that saves time by killing wrong ideas early.
 
-👉 **Theta-Domain Kernel galat direction ko jaldi pakadne ka tool hai.**
-
-⭐ Agar yeh approach resonate karti hai —  
-**watch this repository.**
+⭐ If this approach resonates,  
+watch this repository.
